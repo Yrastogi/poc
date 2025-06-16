@@ -1,0 +1,68 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  padding-top: 1rem; /* Account for navbar */
+  min-height: calc(100vh - 60px); /* Adjust based on navbar height */
+  background-color: #f0f2f5;
+}
+
+.dashboardContainer {
+  background-color: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1200px; /* Wider for more charts */
+  margin-top: 1rem; /* Space below navbar */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* This will be mostly title now */
+  align-items: center;
+  margin-bottom: 1.5rem; /* Reduced margin */
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.title {
+  font-size: 2rem; /* Slightly smaller */
+  color: #333;
+}
+
+/* Logout button styles are now in Navbar.module.css */
+
+.chartsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive 2-column grid */
+  gap: 2rem; /* Increased gap */
+}
+
+.chartWrapper {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.chartTitle {
+  font-size: 1.3rem; /* Adjusted size */
+  color: #444;
+  margin-top: 0; /* Remove top margin as wrapper has padding */
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.noDataMessage {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  padding: 3rem 0;
+}
+
+.formLink {
+  color: #0070f3;
+  text-decoration: underline;
+}

@@ -1,0 +1,127 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f0f2f5;
+}
+
+.loginContainer {
+  background-color: #ffffff;
+  padding: 2.5rem 3rem; /* Increased padding */
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  width: 100%;
+  max-width: 450px; /* Slightly wider */
+  text-align: center;
+}
+
+.brandingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.logoImage {
+  border-radius: 8px; /* Optional: if logo has background */
+  margin-bottom: 0.75rem;
+}
+
+.brandName {
+  font-size: 1.8rem; /* Adjusted size */
+  color: #2c3e50; /* Darker, professional color */
+  font-weight: 600;
+}
+
+.title {
+  font-size: 1.5rem; /* Sub-heading for "Login" */
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; /* Increased gap */
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.inputGroup label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.inputGroup input {
+  padding: 0.85rem; /* Increased padding */
+  border: 1px solid #ccc;
+  border-radius: 6px; /* More rounded */
+  font-size: 1rem;
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-color: #0070f3;
+  box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.2); /* Adjusted focus shadow */
+}
+
+.loginButton {
+  padding: 0.9rem; /* Increased padding */
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 1rem; /* Spacing above button */
+}
+
+.loginButton:hover {
+  background-color: #005bb5;
+}
+
+.message {
+  margin-top: 1.5rem; /* Increased spacing */
+  padding: 0.85rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.errorText {
+  color: #d9534f;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+.securityNote {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+  background-color: #f9f9f9;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  text-align: left;
+}
